@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripicsSkControls", "TripicsSkControls.csproj", "{1BE065CF-B86E-4935-8F8D-7CD0405D818D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripicSkiaSharpDemos", "..\Users\phill\source\repos\TripicSkiaSharpDemos\TripicSkiaSharpDemos.csproj", "{D7FCA463-ED76-4533-9A2F-91CF2628B9BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1BE065CF-B86E-4935-8F8D-7CD0405D818D} = {1BE065CF-B86E-4935-8F8D-7CD0405D818D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BE065CF-B86E-4935-8F8D-7CD0405D818D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE065CF-B86E-4935-8F8D-7CD0405D818D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE065CF-B86E-4935-8F8D-7CD0405D818D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE065CF-B86E-4935-8F8D-7CD0405D818D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FCA463-ED76-4533-9A2F-91CF2628B9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FCA463-ED76-4533-9A2F-91CF2628B9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FCA463-ED76-4533-9A2F-91CF2628B9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FCA463-ED76-4533-9A2F-91CF2628B9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41124C6E-D99C-4B95-A897-4C58A82203BF}
+	EndGlobalSection
+EndGlobal
