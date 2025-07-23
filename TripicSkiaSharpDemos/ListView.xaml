@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:TripicsSkControls.Controls;assembly=TripicsSkControls"
+             x:Class="TripicSkiaSharpDemos.ListView"
+             Title="ListView">
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"  />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+
+
+   
+        <controls:TSKList 
+            Grid.Row="0"
+            Grid.Column="0" 
+    ListControlMode="ToolBarOnly"
+            
+            HeightRequest="300" WidthRequest="350"
+        x:Name="DemoList"
+        Columns="{Binding Columns}"
+        ListColumnNames="{Binding ColumnNames}"
+        ListItemsSource="{Binding Items}"
+        ListColorMode="AlternatingColors"
+        DisplayMode="TextOnly"
+        PrimaryColor="White"
+        SecondaryColor="LightGray"
+        GoodColor="Green"
+        WarningColor="Orange"
+        DangerColor="Red"
+        ListHeaderFontSize="20"
+        ListItemFontSize="16"
+        ListBorderColor="red"
+            ListBorderWidth="5"
+        IsContentReady="True"
+        >
+
+        </controls:TSKList>
+
+        <controls:TSKList 
+      Grid.Row="0"
+      Grid.Column="1" 
+    
+      HeightRequest="310" WidthRequest="300"
+  x:Name="DemoList2"
+  Columns="{Binding Columns}"
+  ListColumnNames="{Binding ColumnNames}"
+  ListItemsSource="{Binding Items}"
+  ListColorMode="AlternatingColors"
+  DisplayMode="CheckBoxes"
+  PrimaryColor="White"
+  SecondaryColor="LightGray"
+  GoodColor="Green"
+  WarningColor="Orange"
+  DangerColor="Red"
+  ListHeaderFontSize="20"
+  ListItemFontSize="16"
+  ListBorderColor="Black"
+  IsContentReady="True"
+  ></controls:TSKList>
+        <controls:TSKCard
+            VerticalOptions="CenterAndExpand"
+            
+            x:Name="Democard1"
+                Grid.Row="1"
+                Grid.Column="0" 
+            
+  CardBGColor="Blue"
+    CardBorderColor="red"
+    CardBorderRadius="10"
+    CardBorderWidth="5"
+    CardShadowColor="Yellow"
+    CardHeightRequest="300"
+    CardWidthRequest="320"
+    CardShadowOffset="10,10 "
+    CardShadowRadius="10"
+    CardShadowBlur="15"
+    CardShadowOpacity=".75"
+    IsDataUsed="false"
+   IsContentReady="True"
+    >
+            
+            <controls:TSKList 
+    
+HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                HeightRequest="200" WidthRequest="300"
+x:Name="DemoList3"
+Columns="{Binding Columns1}"
+ListColumnNames="{Binding ColumnNames1}"
+ListItemsSource="{Binding Items1}"
+IsInCard="true"                
+CardHeight="390"
+ListColorMode="AlternatingColors"
+DisplayMode="RadioButtons"
+PrimaryColor="White"
+SecondaryColor="LightGray"
+GoodColor="Green"
+WarningColor="Orange"
+DangerColor="Red"
+ListHeaderFontSize="20"
+ListItemFontSize="16"
+ListBorderColor="red"
+IsContentReady="True"
+                IsDataUsed="True"
+></controls:TSKList>
+            
+        </controls:TSKCard>
+        <controls:TSKList 
+    Grid.Row="1"
+    Grid.Column="1" 
+  
+    HeightRequest="300" WidthRequest="300"
+x:Name="DemoList4"
+Columns="{Binding Columns}"
+ListColumnNames="{Binding ColumnNames}"
+ListItemsSource="{Binding Items}"
+ListColorMode="AlternatingColors"
+DisplayMode="CircleIndicators"
+PrimaryColor="White"
+SecondaryColor="LightGray"
+GoodColor="Green"
+WarningColor="Orange"
+DangerColor="Red"
+ListHeaderFontSize="20"
+ListItemFontSize="16"
+ListBorderColor="Black"
+IsContentReady="True"
+></controls:TSKList>
+    </Grid>
+
+
+</ContentPage>
